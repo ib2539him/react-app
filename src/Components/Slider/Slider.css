@@ -1,0 +1,44 @@
+.carousel-item {
+    height: 100dvh;
+    position: relative;
+    z-index: 1;
+}
+.carousel-item::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0
+    , 0.9) ;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.carousel-item img {
+    width: 500px !important;
+    height: 573px;
+    object-fit: cover;
+    padding-top: 5rem;
+    margin-inline: auto;
+    margin-top: 11rem;
+    position: relative;
+    z-index: 9999;
+}
+
+.carousel-indicators {
+    margin-top: 5rem !important;
+}
+
+.carousel-caption{
+   transform: translateY(-12rem);
+   backdrop-filter: blur(24px) brightness(150%);
+   -webkit-backdrop-filter: blur(24px);
+   border-radius: 1rem !important;
+   padding: 2rem !important;
+}
+
+.carousel-caption h5{
+    font-size: 4rem;
+   color: rgb(180, 186, 186);
+
+}
